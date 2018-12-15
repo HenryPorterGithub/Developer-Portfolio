@@ -7,12 +7,21 @@ body {
 }
 
 section {
-    padding: 6em 0
+    padding: 6em 0;
 }
 
 section h2 {
     font-size: 3rem;
     line-height: 2.5rem
+}
+
+.sectionHeader {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modalScreenshot {
+    display: none;
 }
 
 /* alternating colors */
@@ -141,6 +150,10 @@ header.masthead h2 {
 }
 
 /* PORTFOLIO */
+
+.aimP {
+    text-align: justify;
+}
 
 .portfolio {
     margin-bottom: -15px
@@ -295,31 +308,78 @@ a:hover {
 
 @media screen and (max-width: 992px) {
     #mainNav {
-        display:none;
+        display: none;
     }
-    
+
     #home {
         padding-bottom: 12rem;
     }
-    
+
     .lead {
         text-align: center;
         margin-bottom: 25px;
     }
-    
+
     .skillsA {
         font-size: 100px;
         width: 100px;
     }
-    
+
     .skillsHeader {
         padding-top: 15px;
     }
 
+}
+
 /* small */
 
 @media screen and (max-width: 768px) {
-
+    .skillsAcontainer {
+        text-align: right;
+        display: inline-block;
     }
 
+    .skillsB {
+        text-align: left;
+    }
 
+    .circleRight {
+        max-width: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .circleLeft {
+        max-width: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .experienceHeader {
+        padding-top: 0;
+        font-size: 1em;
+    }
+
+    section {
+        padding: 3em 0;
+    }
+
+    .modalList {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: justify;
+    }
+    
+    .portfolio-modal .portfolio-modal-dialog {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .projectLink {
+        color:black;
+        font-size: 25px;
+    }
+
+}
