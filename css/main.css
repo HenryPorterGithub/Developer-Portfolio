@@ -10,6 +10,13 @@ section {
     padding: 6em 0
 }
 
+section h2 {
+    font-size: 3rem;
+    line-height: 2.5rem
+}
+
+/* alternating colors */
+
 .bg-primary {
     background-color: #ACC3CB !important
 }
@@ -28,9 +35,24 @@ section {
 
 /* HOME */
 
-#home {
+
+header {
     background: url(615.jpg) !important;
     background-size: auto;
+}
+
+header.masthead {
+    padding-top: calc(6rem + 110px);
+    padding-bottom: 8rem
+}
+
+header.masthead h1 {
+    font-size: 4.75em;
+    line-height: 4rem
+}
+
+header.masthead h2 {
+    font-size: 1.75em
 }
 
 /* NAV BAR */
@@ -57,11 +79,6 @@ section {
     color: red;
 }
 
-#mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: .8rem
-}
-
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -78,17 +95,23 @@ section {
 /* SKILLS */
 
 .skillsA {
-	text-align: center;
+    text-align: center;
     font-size: 175px;
-	width:175px;
+    width: 175px;
+
 }
 
 .skillsB {
-	text-align: center;
-	padding-bottom: 5vh;
+    text-align: center;
+    padding-bottom: 75px;
 }
 
-/* TIMELINE */
+.skillsHeader {
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+/* EDUCATION AND EXPERIENCE */
 
 .circleLeft {
     float: right;
@@ -110,6 +133,11 @@ section {
     border-radius: 50%;
     max-width: 175px;
     height: auto;
+}
+
+.experienceHeader {
+    padding-top: 40px;
+    font-weight: bold;
 }
 
 /* PORTFOLIO */
@@ -166,6 +194,16 @@ section {
     font-size: 2rem
 }
 
+.portfolio-modal .portfolio-modal-dialog {
+    min-height: 100vh;
+    padding: 5rem;
+    margin: 3rem calc(3rem - 8px)
+}
+
+.portfolio-modal .portfolio-modal-dialog h2 {
+    font-size: 3rem
+}
+
 /* LINE BREAK */
 
 hr.star-dark,
@@ -214,83 +252,74 @@ a:hover {
     margin: 0.5vw;
 }
 
+/* NAVBAR */
+
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top .3s, padding-bottom .3s;
+    -moz-transition: padding-top .3s, padding-bottom .3s;
+    transition: padding-top .3s, padding-bottom .3s
+}
+
+/* Class added via js */
+#mainNav.navbar-shrink {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* Navbar colors */
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: white;
+    background: red;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: white;
+    background: red;
+}
+
 /* RESPONSIVENESS */
 
-@media (min-width:992px) {
-    section h2 {
-        font-size: 3rem;
-        line-height: 2.5rem
-    }
-}
+/* extra large */
 
-@media (min-width:767px) {
+@media (min-width: 1140px) {}
+
+/* large */
+
+@media screen and (max-width: 1140px) {}
+
+/* medium */
+
+@media screen and (max-width: 992px) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        -webkit-transition: padding-top .3s, padding-bottom .3s;
-        -moz-transition: padding-top .3s, padding-bottom .3s;
-        transition: padding-top .3s, padding-bottom .3s
+        display:none;
     }
-    #mainNav .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: font-size .3s;
-        -moz-transition: font-size .3s;
-        transition: font-size .3s
+    
+    #home {
+        padding-bottom: 12rem;
     }
-
-    #mainNav .navbar-nav {
-        margin-top: 0
+    
+    .lead {
+        text-align: center;
+        margin-bottom: 25px;
     }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-        color: white;
-        background: red;
+    
+    .skillsA {
+        font-size: 100px;
+        width: 100px;
     }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        color: white;
-        background: red;
+    
+    .skillsHeader {
+        padding-top: 15px;
     }
 
-    #mainNav.navbar-shrink {
-        padding-top: .5rem;
-        padding-bottom: .5rem
-    }
-    #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.5em
-    }
-}
+/* small */
 
-@media (min-width:992px) {
-    header.masthead {
-        padding-top: calc(6rem + 106px);
-        padding-bottom: 6rem
-    }
-    header.masthead h1 {
-        font-size: 4.75em;
-        line-height: 4rem
-    }
-    header.masthead h2 {
-        font-size: 1.75em
-    }
-}
+@media screen and (max-width: 768px) {
 
-@media (min-width:576px) {
-    .portfolio {
-        margin-bottom: -30px
     }
-    .portfolio .portfolio-item {
-        margin-bottom: 30px
-    }
-}
 
-@media (min-width:768px) {
-    .portfolio-modal .portfolio-modal-dialog {
-        min-height: 100vh;
-        padding: 5rem;
-        margin: 3rem calc(3rem - 8px)
-    }
-    .portfolio-modal .portfolio-modal-dialog h2 {
-        font-size: 3rem
-    }
-}
+
