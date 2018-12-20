@@ -296,6 +296,12 @@ a:hover {
 
 /* RESPONSIVENESS */
 
+.modalList {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: justify;
+}
+
 /* extra large */
 
 @media (min-width: 1140px) {}
@@ -371,14 +377,14 @@ a:hover {
         padding-left: 0;
         text-align: justify;
     }
-    
+
     .portfolio-modal .portfolio-modal-dialog {
         padding: 0;
         margin: 0;
     }
-    
+
     .projectLink {
-        color:black;
+        color: black;
         font-size: 25px;
     }
 
