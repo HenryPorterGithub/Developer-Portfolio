@@ -249,6 +249,19 @@ hr.star-dark {
     color: white;
 }
 
+/* LINKS */
+
+.projectLink {
+    color: black; !important
+}
+
+.projectLink:active,
+.projectLink:focus,
+.projectLink:hover {
+    color: skyblue; !important
+    transition: color 0.3s;
+}
+
 a {
     color: #ACC3CB;
 }
@@ -257,7 +270,8 @@ a:active,
 a:focus,
 a:hover {
     color: red;
-    transition: color 0.3s;
+    transition: color 0.3s; 
+    text-decoration: none;
 }
 
 .webLink {
@@ -301,6 +315,10 @@ a:hover {
     padding-left: 0;
 }
 
+.educationAndExperience {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 /* extra large */
 
 @media (min-width: 1140px) {}
