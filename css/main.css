@@ -1,0 +1,554 @@
+.fa-external-link-square-alt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 10em;
+}
+
+.test {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolioItem:hover .image {
+    opacity: 0.3;
+}
+
+.portfolioItem:hover .middle {
+    opacity: 1;
+}
+
+
+
+
+.portfolioItem:hover .fa-external-link-square-alt {
+    opacity: 1 !important;
+}
+
+.test2 {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* loader */
+
+#loaderOverlay {
+    opacity: 1;
+    background: white;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #ACC3CB;
+    border-bottom: 16px solid red;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    /* important positioning snippet for known size objects */
+    position: relative;
+    top: 50%;
+    margin: -60px auto auto auto;
+}
+
+.loaded {
+    opacity: 0 !important;
+    transition: 1s;
+    height: 0 !important;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* UNIVERSAL */
+
+/* <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by GarryKillian - Freepik.com</a> */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    padding: 6em 0;
+}
+
+section h2 {
+    font-size: 3rem;
+    line-height: 2.5rem
+}
+
+.sectionHeader {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modalScreenshot {
+    display: none;
+}
+
+/* alternating colors */
+
+.bg-primary {
+    background-color: #ACC3CB !important
+}
+
+.bg-secondary {
+    background-color: black !important
+}
+
+.text-primary {
+    color: #ACC3CB !important
+}
+
+.text-secondary {
+    color: black !important
+}
+
+/* HOME */
+
+
+header {
+    background: url(615.jpg) !important;
+    background-size: auto;
+}
+
+header.masthead {
+    padding-top: calc(6rem + 110px);
+    padding-bottom: 8rem
+}
+
+header.masthead h1 {
+    font-size: 4.75em;
+    line-height: 4rem
+}
+
+header.masthead h2 {
+    font-size: 1.75em
+}
+
+/* NAV BAR */
+
+#mainNav .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: .0625rem
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: #ACC3CB;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: red;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus {
+    color: white;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: red;
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* HOME PAGE */
+
+#profileImg {
+    width: 15vw;
+    margin-bottom: 3vw;
+}
+
+/* SKILLS */
+
+.skillsA {
+    text-align: center;
+    font-size: 175px;
+    width: 175px;
+
+}
+
+.skillsB {
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.skillsHeader {
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+/* EDUCATION AND EXPERIENCE */
+
+.circleLeft {
+    float: right;
+}
+
+.circleRight {
+    float: left;
+}
+
+.textLeft {
+    text-align: right;
+}
+
+.col-md-6 {
+    padding-bottom: 25px;
+}
+
+.logo {
+    border-radius: 50%;
+    max-width: 175px;
+    height: auto;
+}
+
+.experienceHeader {
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+/* PORTFOLIO */
+
+.portfolioLink:hover {
+    background-color: green;
+}
+
+.aimP {
+    text-align: justify;
+}
+
+.portfolio {
+    margin-bottom: -15px
+}
+
+.portfolio .portfolio-item {
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    margin-bottom: 15px
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    opacity: 0;
+    background-color: rgba(255, 0, 0, 0.5)
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    font-size: 1.5rem
+}
+
+.portfolio-modal .portfolio-modal-dialog {
+    padding: 3rem 1rem;
+    min-height: calc(100vh - 2rem);
+    margin: 1rem calc(1rem - 8px);
+    position: relative;
+    z-index: 2;
+    -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, .5)
+}
+
+.portfolio-modal .portfolio-modal-dialog .close-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem
+}
+
+.portfolio-modal .portfolio-modal-dialog .close-button i {
+    line-height: 38px
+}
+
+.portfolio-modal .portfolio-modal-dialog h2 {
+    font-size: 2rem
+}
+
+.portfolio-modal .portfolio-modal-dialog {
+    min-height: 100vh;
+    padding: 5rem;
+    margin: 3rem calc(3rem - 8px)
+}
+
+.portfolio-modal .portfolio-modal-dialog h2 {
+    font-size: 3rem
+}
+
+/* LINE BREAK */
+
+hr.star-dark,
+hr.star-light {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto
+}
+
+hr.star-light {
+    border-color: #ACC3CB;
+}
+
+hr.star-dark {
+    border-color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: black;
+    color: white;
+}
+
+/* LINKS */
+
+.projectLink {
+    color: black;
+     !important
+}
+
+.projectLink:active,
+.projectLink:focus,
+.projectLink:hover {
+    color: skyblue;
+     !important transition: color 0.3s;
+}
+
+a {
+    color: #ACC3CB;
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: red;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.webLink {
+    font-size: 3em;
+    margin: 0.5vw;
+}
+
+/* NAVBAR */
+
+#mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top .3s, padding-bottom .3s;
+    -moz-transition: padding-top .3s, padding-bottom .3s;
+    transition: padding-top .3s, padding-bottom .3s
+}
+
+/* Class added via js */
+#mainNav.navbar-shrink {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* Navbar colors */
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: white;
+    background: red;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: white;
+    background: red;
+}
+
+/* RESPONSIVENESS */
+
+.modalList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.educationAndExperience {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* extra large */
+
+@media (min-width: 1140px) {}
+
+/* large */
+
+@media screen and (max-width: 1140px) {}
+
+/* medium */
+
+@media screen and (max-width: 992px) {
+    #mainNav {
+        display: none;
+    }
+
+    #home {
+        padding-bottom: 12rem;
+    }
+
+    .lead {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .skillsA {
+        font-size: 100px;
+        width: 100px;
+    }
+
+    .skillsHeader {
+        padding-top: 15px;
+    }
+
+}
+
+/* small */
+
+@media screen and (max-width: 768px) {
+    .skillsAcontainer {
+        text-align: right;
+        display: inline-block;
+    }
+
+    .skillsB {
+        text-align: left;
+    }
+
+    .circleRight {
+        max-width: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .circleLeft {
+        max-width: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .experienceHeader {
+        padding-top: 0;
+        font-size: 1em;
+    }
+
+    section {
+        padding: 3em 0;
+    }
+
+    .modalList {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .portfolio-modal .portfolio-modal-dialog {
+        padding: 0;
+        margin: 0;
+    }
+
+    .projectLink {
+        color: black;
+        font-size: 25px;
+    }
+
+}

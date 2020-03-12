@@ -1,0 +1,4 @@
+Sitemap: https://www.hpdevelopment.uk/sitemap.xml
+
+User-agent: *
+Allow: /
