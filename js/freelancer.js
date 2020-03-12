@@ -48,9 +48,4 @@
         modal: true
     });
 
-    $(document).on('click', '.portfolio-modal-dismiss', function (e) {
-        e.preventDefault();
-        $.magnificPopup.close();
-    });
-
 })(jQuery); // End of use strict
